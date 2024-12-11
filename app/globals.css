@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #111212;
+  --foreground: #fff;
+  --radial-gradient: radial-gradient(circle, rgb(194, 131, 0), #000000);
+}
+
+
+.shadow-custom {
+  box-shadow: 0 0px 100px rgba(192, 131, 0, 0.5), 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #111212;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
